@@ -1,0 +1,12 @@
+@mixin openSans($size, $color) {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: $size;
+	color: $color;
+}
+@mixin openSansBold($size, $color) {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: $size;
+	color: $color;
+}

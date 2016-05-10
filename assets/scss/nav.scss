@@ -1,0 +1,39 @@
+nav.Nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: $nav-height;
+	background-color: $blue-7;
+	display: block;
+	.Nav_boards {
+		position: absolute;
+		left: 10px;
+		top: ($nav-height - 37px) / 2;
+	}
+	.Nav_logo {
+		position: absolute;
+		top: ($nav-height - 27.5px) / 2;
+		left: 50%;
+		margin: 0 0 0 -42px;
+		display: block;
+		overflow: hidden;
+		height: $nav-height / 2;
+	}
+	.Nav_user {
+		position: absolute;
+		right: 10px;
+		top: ($nav-height - 37px) / 2;
+	}
+	.Nav_button {
+		display: block;
+		@include openSans($small, $white);
+		background-color: $blue-5;
+		padding: 10px 15px;
+		border-radius: $border-radius;
+		cursor: pointer;
+		&:hover {
+			background-color: $blue-4;
+		}
+	}
+}

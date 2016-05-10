@@ -1,0 +1,16 @@
+{
+  "name": "vue-trello",
+  "version": "1.0.0",
+  "author": "Zack Thoutt",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "vue-router": "^0.7.13"
+  },
+  "dependencies": {
+    "vue-focus": "^0.1.1"
+  }
+}

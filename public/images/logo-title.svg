@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="138px" height="45px" viewBox="0 0 138 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0091E6" offset="0%"></stop>
+            <stop stop-color="#0079BF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(0.000000, -10.000000)">
+            <g id="trello-mark-blue" transform="translate(0.000000, 10.000000)">
+                <g id="Page-1">
+                    <g>
+                        <g id="Original-Assets">
+                            <g id="Group">
+                                <g id="Trello-Logo">
+                                    <g id="Trello-Mark---Blue">
+                                        <g id="Mark">
+                                            <rect id="Board" fill="url(#linearGradient-1)" x="0" y="0" width="45" height="45" rx="5.62500022"></rect>
+                                            <rect id="Right-List" fill="#FFFFFF" x="25.425" y="5.85" width="13.725" height="19.6875" rx="2.70000011"></rect>
+                                            <rect id="Left-List" fill="#FFFFFF" x="5.85" y="5.85" width="13.725" height="30.9375" rx="2.70000011"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <text id="Zello" font-family="Yesteryear-Regular, Yesteryear" font-size="48" font-weight="normal" fill="#0180CB">
+                <tspan x="56" y="47">Zello</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

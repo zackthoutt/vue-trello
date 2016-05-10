@@ -1,0 +1,453 @@
+@import url(../../assets/css/normalize.css);
+.transition, .CreateList, .CreateList-active, .Collection .Collection_item:hover .Star, .Star, .Star:hover path {
+  transition: all 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -webkit-transition: all 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -moz-transition: all 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -o-transition: all 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9); }
+
+.baseShadow {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); }
+
+.Cancel {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin-left: 13px;
+  vertical-align: center;
+  stroke-linecap: round;
+  stroke: #B6BBBF;
+  stroke-width: 3; }
+  .Cancel:hover {
+    stroke: #959DA1; }
+
+.Input {
+  width: 88%;
+  padding: 5px;
+  min-height: 18px;
+  display: block;
+  margin: 0 auto 7px auto;
+  background-color: #E2E4E6;
+  border-radius: 3px;
+  color: #4d4d4d;
+  outline: none;
+  border: none; }
+  .Input:focus {
+    background-color: #FFFFFF; }
+
+.Button {
+  background: linear-gradient(top, #61bd4f, #5aac44);
+  background: -webkit-linear-gradient(top, #61bd4f, #5aac44);
+  padding: 5px 15px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+  box-shadow: 0 1px 0 #3f6f21; }
+  .Button:hover {
+    background: linear-gradient(top, #5aac44, #519839);
+    background: -webkit-linear-gradient(top, #5aac44, #519839); }
+
+.TextArea {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #4d4d4d;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  opacity: 1;
+  width: 80%;
+  padding: 10px 4%;
+  min-height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #4d4d4d; }
+
+hr.pad20 {
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+  outline: 0;
+  border: 0; }
+
+nav.Nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 55px;
+  background-color: #026AA7;
+  display: block; }
+  nav.Nav .Nav_boards {
+    position: absolute;
+    left: 10px;
+    top: 9px; }
+  nav.Nav .Nav_logo {
+    position: absolute;
+    top: 13.75px;
+    left: 50%;
+    margin: 0 0 0 -42px;
+    display: block;
+    overflow: hidden;
+    height: 27.5px; }
+  nav.Nav .Nav_user {
+    position: absolute;
+    right: 10px;
+    top: 9px; }
+  nav.Nav .Nav_button {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    background-color: #298FCA;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer; }
+    nav.Nav .Nav_button:hover {
+      background-color: #5BA4CF; }
+
+.Background {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+  .Background .Background_spacer {
+    width: 100vw;
+    height: 55px; }
+  .Background .Background_container {
+    margin: 10px auto;
+    width: 90%;
+    max-width: 1300px; }
+  .Background .Background_title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #4d4d4d;
+    margin: 10px 0; }
+
+.Background-white {
+  background-color: #FFFFFF; }
+
+.Background-blue {
+  background-color: #0079BF; }
+
+.Task {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #FFFFFF;
+  color: #4d4d4d;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  opacity: 1;
+  width: 80%;
+  padding: 3% 4%;
+  min-height: 17px;
+  margin: 0 auto 7px auto;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #4d4d4d; }
+  .Task:hover {
+    background-color: #F8F9F9; }
+  .Task .Task_title {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #4d4d4d;
+    white-space: normal; }
+
+.ListContainer {
+  display: block;
+  width: 100vw;
+  height: 80vh;
+  overflow: scroll;
+  white-space: nowrap; }
+  .ListContainer > .current-target {
+    background-color: #055A8C !important; }
+  .ListContainer .current-target > * {
+    visibility: hidden; }
+
+.List {
+  padding-top: 10px;
+  width: 275px;
+  background-color: #E2E4E6;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 0.5% 1.5%;
+  vertical-align: top; }
+  .List .List_tasks {
+    max-height: 70vh;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0; }
+  .List .List_addTask {
+    width: 88%;
+    padding: 7px 6%;
+    margin: 0;
+    height: auto;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #959DA1; }
+    .List .List_addTask:hover {
+      text-decoration: underline;
+      color: #4d4d4d;
+      background-color: #CDD2D4;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+  .List .List_newTaskOptions {
+    width: 88%;
+    padding: 10px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start; }
+  .List .current-target {
+    background-color: #C4C9CC !important; }
+  .List .current-target > * {
+    visibility: hidden; }
+
+.CreateList {
+  padding: 7px 0;
+  width: 275px;
+  background-color: #026AA7;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 0.5% 1.5%;
+  vertical-align: top;
+  cursor: pointer; }
+  .CreateList:hover {
+    background-color: #055A8C; }
+  .CreateList .CreateList_title {
+    width: 88%;
+    padding: 5px;
+    min-height: 18px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF; }
+  .CreateList .CreateList_options {
+    width: 88%;
+    padding: 10px 4%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start; }
+  .CreateList .CreateList_input {
+    width: 88%;
+    padding: 5px;
+    min-height: 18px;
+    display: block;
+    margin: 0 auto;
+    background-color: #E2E4E6;
+    border-radius: 3px;
+    color: #4d4d4d;
+    outline: none;
+    border: 1px solid #CDD2D4;
+    box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.15); }
+    .CreateList .CreateList_input:focus {
+      background-color: #E2E4E6; }
+    .CreateList .CreateList_input::-webkit-input-placeholder {
+      color: #CDD2D4; }
+
+.CreateList-active {
+  background-color: #E2E4E6 !important;
+  padding: 10px 0 0 0 !important; }
+
+.Overlay {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; }
+
+.TaskModule {
+  background-color: #E2E4E6;
+  border-radius: 3px;
+  height: 375px;
+  width: 330px;
+  z-index: 2000;
+  margin: 4% 0;
+  padding: 0; }
+  .TaskModule .TaskModule_exit {
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 35px; }
+    .TaskModule .TaskModule_exit .Cancel {
+      position: absolute;
+      right: 14.7px;
+      top: 10px;
+      margin: 0; }
+  .TaskModule .TaskModule_title {
+    color: #4d4d4d;
+    margin: 0 auto 1px auto; }
+  .TaskModule .TaskModule_list {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #959DA1;
+    width: 88%;
+    margin: 0 auto; }
+    .TaskModule .TaskModule_list strong {
+      text-decoration: underline; }
+  .TaskModule .TaskModule_description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #959DA1;
+    width: 88%;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+    cursor: pointer; }
+  .TaskModule .TaskModule_descriptionTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #4d4d4d;
+    margin: 15px auto 5px auto;
+    width: 88%; }
+  .TaskModule .TaskModule_options {
+    width: 88%;
+    padding: 10px 4%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto; }
+
+.Collection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%; }
+  .Collection .Collection_item {
+    display: block;
+    position: relative;
+    height: 85px;
+    margin: 0 20px 20px 0;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 2% 10px 2%;
+    width: 250px;
+    background-color: #026AA7; }
+    .Collection .Collection_item:hover {
+      background-color: #055A8C; }
+      .Collection .Collection_item:hover .Star {
+        right: 13px;
+        visibility: visible; }
+  .Collection .Collection_title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0; }
+  .Collection .Collection_addBoard {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #4d4d4d;
+    margin: 0;
+    padding: 7px;
+    border: 0;
+    outline: 0;
+    border-radius: 3px;
+    background-color: #FFFFFF; }
+  .Collection .Collection_options {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px auto; }
+  .Collection .Collection_newItem {
+    height: 85px;
+    margin: 0 20px 20px 0;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 2% 10px 2%;
+    width: 250px;
+    background-color: #CDD2D4;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #4d4d4d; }
+    .Collection .Collection_newItem:hover {
+      background-color: #B6BBBF; }
+  .Collection .Collection_newItem-active {
+    background-color: #CDD2D4 !important; }
+    .Collection .Collection_newItem-active:hover {
+      background-color: #CDD2D4 !important; }
+
+.Star {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: -20px;
+  top: 10px;
+  padding: 2px;
+  visibility: hidden; }
+  .Star path {
+    stroke-width: 10;
+    stroke: #FFFFFF;
+    fill: #FFFFFF; }
+  .Star:hover path {
+    stroke-width: 30; }
+
+.Board .Board_title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  align-self: flex-start;
+  width: 261px;
+  margin: 0;
+  padding: 2px 7px;
+  outline: 0;
+  border: 0;
+  background-color: #0079BF;
+  border-radius: 3px; }
+  .Board .Board_title:focus {
+    background-color: #FFFFFF !important;
+    color: #4d4d4d !important; }
+.Board .Board_info {
+  width: 97%;
+  margin: 2% auto 0 auto;
+  height: auto;
+  display: flex; }
+
+/*# sourceMappingURL=trello.css.map */

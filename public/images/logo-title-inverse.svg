@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="138px" height="45px" viewBox="0 0 138 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(0.000000, -10.000000)" fill="#FFFFFF">
+            <g id="trello-mark-blue" transform="translate(0.000000, 10.000000)">
+                <g id="Page-1">
+                    <g>
+                        <g id="Original-Assets">
+                            <g id="Group">
+                                <g id="Trello-Logo">
+                                    <g id="Trello-Mark---Blue">
+                                        <g id="Mark">
+                                            <path d="M0,5.63098739 C0,2.52107893 2.51581994,0 5.63098739,0 L39.3690126,0 C42.4789211,0 45,2.51581994 45,5.63098739 L45,39.3690126 C45,42.4789211 42.4841801,45 39.3690126,45 L5.63098739,45 C2.52107893,45 0,42.4841801 0,39.3690126 L0,5.63098739 Z M5.85,8.54137986 C5.85,7.05497181 7.06800219,5.85 8.54524226,5.85 L16.8797577,5.85 C18.3682989,5.85 19.575,7.06278666 19.575,8.54137986 L19.575,34.0961201 C19.575,35.5825282 18.3569978,36.7875 16.8797577,36.7875 L8.54524226,36.7875 C7.05670106,36.7875 5.85,35.5747133 5.85,34.0961201 L5.85,8.54137986 Z M25.425,8.54618261 C25.425,7.05712207 26.6430022,5.85 28.1202423,5.85 L36.4547577,5.85 C37.9432989,5.85 39.15,7.05190511 39.15,8.54618261 L39.15,22.8413174 C39.15,24.3303779 37.9319978,25.5375 36.4547577,25.5375 L28.1202423,25.5375 C26.6317011,25.5375 25.425,24.3355949 25.425,22.8413174 L25.425,8.54618261 Z" id="Combined-Shape"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <text id="Zello" font-family="Yesteryear-Regular, Yesteryear" font-size="48" font-weight="normal">
+                <tspan x="56" y="47">Zello</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

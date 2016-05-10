@@ -1,0 +1,66 @@
+.Overlay {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+}
+.TaskModule {
+	background-color: $gray-3;
+	border-radius: $border-radius;
+	height: $card-height;
+	width: $card-width;
+	z-index: 2000;
+	margin: 4% 0;
+	padding: 0;
+	.TaskModule_exit {
+		width: 100%;
+		display: block;
+		position: relative;
+		height: 35px;
+		.Cancel {
+			position: absolute;
+			right: 14.7px;
+			top: 10px;
+			margin: 0;
+		}
+	}
+	.TaskModule_title {
+		color: $black;
+		margin: 0 auto 1px auto;
+	}
+	.TaskModule_list {
+		@include openSans($small, $gray-9);
+		width: $list-item-width;
+		margin: 0 auto;
+		strong {
+			text-decoration: underline;
+		}
+	}
+	.TaskModule_description {
+		@include openSans($small, $gray-9);
+		width: $list-item-width;
+		margin: 0 auto;
+		padding: 0 0 20px 0;
+		cursor: pointer;
+	}
+	.TaskModule_descriptionTitle {
+		@include openSans($small, $black);
+		margin: 15px auto 5px auto;
+		width: $list-item-width;
+	}
+	.TaskModule_options {
+		width: $list-item-width;
+		padding: 10px $text-space;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-start;
+		margin: 0 auto;
+	}
+}

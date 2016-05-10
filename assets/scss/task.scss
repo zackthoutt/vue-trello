@@ -1,0 +1,28 @@
+.Task {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-color: $white;
+	color: $black;
+	border-radius: $border-radius;
+	border: none;
+	outline: none;
+	opacity: 1;
+	width: $list-item-width - 2 * $text-space;
+	padding: 3% $text-space;
+	min-height: 17px;
+	margin: 0 auto $task-space auto;
+	cursor: pointer;
+	@include openSans($small, $black);
+	&:hover {
+		background-color: $gray-1;
+	}
+	.Task_title {
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		width: 100%;
+		@include openSans($small, $black);
+		white-space: normal;
+	}
+}

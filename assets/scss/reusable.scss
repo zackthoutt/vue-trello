@@ -1,0 +1,74 @@
+.transition {
+	transition: all 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+	-webkit-transition: all 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+	-moz-transition: all 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+	-o-transition: all 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+}
+.baseShadow {
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+.Cancel {
+	cursor: pointer;
+	width: 15px;
+	height: 15px;
+	margin-left: 13px;
+	vertical-align: center;
+	stroke-linecap: round;
+	stroke: $gray-7;
+	stroke-width: 3;
+	&:hover {
+		stroke: $gray-9;
+	}
+}
+.Input {
+	width: $list-item-width;
+	padding: 5px;
+	min-height: 18px;
+	display: block;
+	margin: 0 auto $task-space auto;
+	background-color: $gray-3;
+	border-radius: $border-radius;
+	color: $black;
+	outline: none;
+	border: none;
+	&:focus {
+		background-color: $white;
+	}
+}
+.Button {
+	background: linear-gradient(top, #61bd4f, #5aac44);
+	background: -webkit-linear-gradient(top, #61bd4f, #5aac44);
+	padding: 5px 15px;
+	border: none;
+	border-radius: $border-radius;
+	outline: none;
+	@include openSans($medium, $white);
+	box-shadow: 0 1px 0 #3f6f21;
+	&:hover {
+		background: linear-gradient(top, #5aac44, #519839);
+		background: -webkit-linear-gradient(top, #5aac44, #519839);
+	}
+}
+.TextArea {
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: $white;
+	color: $black;
+	border-radius: $border-radius;
+	border: none;
+	outline: none;
+	opacity: 1;
+	width: $list-item-width - 2 * $text-space;
+	padding: 10px $text-space;
+	min-height: 50px;
+	@include openSans($small, $black);
+}
+hr.pad20 {
+	width: 100%;
+	padding: 10px 0;
+	margin: 0;
+	outline: 0;
+	border: 0;
+}

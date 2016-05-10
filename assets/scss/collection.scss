@@ -1,0 +1,88 @@
+.Collection {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+	.Collection_item {
+		display: block;
+		position: relative;
+		height: 85px;
+		margin: 0 20px 20px 0;
+		border-radius: $border-radius;
+		cursor: pointer;
+		padding: 10px 2% 10px 2%;
+		width: 250px;
+		background-color: $blue-7;
+		&:hover {
+			background-color: $blue-8;
+			.Star {
+				@extend .transition;
+				right: 13px;
+				visibility: visible;
+			}
+		}
+	}
+	.Collection_title {
+		@include openSans($medium, $white);
+		margin: 0;
+		padding: 0;
+	}
+	.Collection_addBoard {
+		@include openSans($medium, $black);
+		margin: 0;
+		padding: 7px;
+		border: 0;
+		outline: 0;
+		border-radius: $border-radius;
+		background-color: $white;
+	}
+	.Collection_options {
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-start;
+		margin: 10px auto;
+	}
+	.Collection_newItem {
+		height: 85px;
+		margin: 0 20px 20px 0;
+		border-radius: $border-radius;
+		cursor: pointer;
+		padding: 10px 2% 10px 2%;
+		width: 250px;
+		background-color: $gray-5;
+		@include openSans($medium, $black);
+		&:hover {
+			background-color: $gray-7;
+		}
+	}
+	.Collection_newItem-active {
+		background-color: $gray-5 !important;
+		&:hover {
+			background-color: $gray-5 !important;
+		}
+	}
+}
+.Star {
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	right: -20px;
+	top: 10px;
+	padding: 2px;
+	@extend .transition;
+	visibility: hidden;
+	path {
+		stroke-width: 10;
+		stroke: $white;
+		fill: $white;
+	}
+	&:hover {
+		path {
+			@extend .transition;
+			stroke-width: 30;
+		}
+	}
+}
