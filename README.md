@@ -1,5 +1,6 @@
 # What is this?
 This repo is a Trello clone built with VueJS. I decided to make this app over a free weekend of mine as a way to learn VueJS. Since I built the app purely as an exercise over the span of 48 hours it is not fully-functional or bug-free. The purpose of this project was to create an application that met the minimum requirements listed below. Each requirement was created to achieve a specific learning goal.
+
 1. There are two views--one that displays the collection of board and another that displays the lists and cards for a given board (Vue router)
 2. The app uses components to modularize the code (Vue components)
 3. Both cards and lists are draggable (Vue directives)
