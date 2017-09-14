@@ -8,6 +8,22 @@ This repo is a Trello clone built with VueJS. I decided to make this app over a 
 5. You can create and edit cards, card descriptions, lists, and boards (Vue events)
 6. You can "star" your most important boards and see the filtered subset at the top of the board collection page (Vue filters)
 
+# Connect with me
+
+If you'd like to collaborate on a project, learn more about me, or just say hi, feel free to contact me using any of the social channels listed below.
+
+- [Personal Website](https://zackthoutt.com)
+- [Email](mailto:zackarey.thoutt@colorado.edu)
+- [LinkedIn](https://www.linkedin.com/in/zack-thoutt-57275655/)
+- [Twitter](https://twitter.com/zthoutt)
+- [Medium](https://medium.com/@zthoutt)
+- [Quora](https://www.quora.com/profile/Zack-Thoutt)
+- [HackerNews](https://news.ycombinator.com/submitted?id=zthoutt)
+- [Reddit](https://www.reddit.com/user/zthoutt/)
+- [Kaggle](https://www.kaggle.com/zynicide)
+- [Instagram](https://www.instagram.com/zthoutt/)
+- [500px](https://500px.com/zthoutt)
+
 # Demo
 ![Step 1](demo/step-1.png)
 ![Step 2](demo/step-2.png)
